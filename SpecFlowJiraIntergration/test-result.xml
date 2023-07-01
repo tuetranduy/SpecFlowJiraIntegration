@@ -1,0 +1,141 @@
+<test-run id="2" duration="35.188879" testcasecount="5" total="5" passed="5" failed="0" inconclusive="0" skipped="0" result="Passed" start-time="2023-07-01T 13:50:42Z" end-time="2023-07-01T 13:51:28Z">
+  <test-suite type="Assembly" name="SpecFlowJiraIntegration.dll" fullname="C:\Users\DuyTue\source\repos\SpecFlowJiraIntergration\SpecFlowJiraIntergration\bin\Debug\net6.0\SpecFlowJiraIntegration.dll" total="5" passed="5" failed="0" inconclusive="0" skipped="0" result="Passed" start-time="2023-07-01T 13:50:45Z" end-time="2023-07-01T 13:51:20Z" duration="35.188879">
+    <test-suite type="TestSuite" name="SpecFlowJiraIntegration" fullname="SpecFlowJiraIntegration" total="5" passed="5" failed="0" inconclusive="0" skipped="0" result="Passed" start-time="2023-07-01T 13:50:45Z" end-time="2023-07-01T 13:51:20Z" duration="35.188879">
+      <test-suite type="TestSuite" name="Features" fullname="SpecFlowJiraIntegration.Features" total="5" passed="5" failed="0" inconclusive="0" skipped="0" result="Passed" start-time="2023-07-01T 13:50:45Z" end-time="2023-07-01T 13:51:20Z" duration="35.188879">
+        <test-suite type="TestSuite" name="UI" fullname="SpecFlowJiraIntegration.Features.UI" total="5" passed="5" failed="0" inconclusive="0" skipped="0" result="Passed" start-time="2023-07-01T 13:50:45Z" end-time="2023-07-01T 13:51:20Z" duration="35.188879">
+          <test-suite type="TestFixture" name="LoginFeatureFeature" fullname="SpecFlowJiraIntegration.Features.UI.LoginFeatureFeature" classname="SpecFlowJiraIntegration.Features.UI.LoginFeatureFeature" total="5" passed="5" failed="0" inconclusive="0" skipped="0" result="Passed" start-time="2023-07-01T 13:50:45Z" end-time="2023-07-01T 13:51:20Z" duration="35.188879">
+            <test-case name="LoginUnsuccessfully(&quot;No customer account found&quot;,&quot;Test@123.com&quot;,&quot;12345678&quot;,&quot;No customer account found&quot;,null)" fullname="SpecFlowJiraIntegration.Features.UI.LoginFeatureFeature.LoginUnsuccessfully(&quot;No customer account found&quot;,&quot;Test@123.com&quot;,&quot;12345678&quot;,&quot;No customer account found&quot;,null)" methodname="LoginUnsuccessfully(&quot;No customer account found&quot;,&quot;Test@123.com&quot;,&quot;12345678&quot;,&quot;No customer account found&quot;,null)" classname="LoginFeatureFeature" result="Passed" start-time="2023-07-01T 13:50:45Z" end-time="2023-07-01T 13:50:52Z" duration="7.544778" asserts="0" seed="409935470">
+              <properties>
+                <property name="Category" value="Regression" />
+                <property name="Category" value="Login" />
+              </properties>
+              <output><![CDATA[BaseTest Set up
+Given I open Homepage
+-> done: LoginSteps.GivenIopenHomepage() (3.1s)
+And I navigate to Login page
+Click on Login Link
+-> done: LoginSteps.GivenInavigatetoLoginpage() (1.1s)
+When I log in with "Test@123.com" and "12345678"
+Test@123.com is entered in the Email Textbox field.
+12345678 is entered in the Password Textbox field.
+Click on Log in Button
+-> done: LoginSteps.WhenIloginwithand("Test@123.com", "12345678") (1.1s)
+Then the "No customer account found" should display
+Error Message: No customer account found is displayed as expected
+-> done: LoginSteps.Thentheshoulddisplays("No customer accou...") (0.1s)
+BaseTest Tear Down
+
+]]></output>
+            </test-case>
+            <test-case name="LoginUnsuccessfully(&quot;Wrong email format&quot;,&quot;Test&quot;,&quot;123456789&quot;,&quot;Wrong email&quot;,null)" fullname="SpecFlowJiraIntegration.Features.UI.LoginFeatureFeature.LoginUnsuccessfully(&quot;Wrong email format&quot;,&quot;Test&quot;,&quot;123456789&quot;,&quot;Wrong email&quot;,null)" methodname="LoginUnsuccessfully(&quot;Wrong email format&quot;,&quot;Test&quot;,&quot;123456789&quot;,&quot;Wrong email&quot;,null)" classname="LoginFeatureFeature" result="Passed" start-time="2023-07-01T 13:50:52Z" end-time="2023-07-01T 13:50:59Z" duration="6.249792" asserts="0" seed="510884070">
+              <properties>
+                <property name="Category" value="Regression" />
+                <property name="Category" value="Login" />
+              </properties>
+              <output><![CDATA[BaseTest Set up
+Given I open Homepage
+-> done: LoginSteps.GivenIopenHomepage() (3.0s)
+And I navigate to Login page
+Click on Login Link
+-> done: LoginSteps.GivenInavigatetoLoginpage() (1.2s)
+When I log in with "Test" and "123456789"
+Test is entered in the Email Textbox field.
+123456789 is entered in the Password Textbox field.
+Click on Log in Button
+-> done: LoginSteps.WhenIloginwithand("Test", "123456789") (0.4s)
+Then the "Wrong email" should display
+Error Message: Wrong email is displayed as expected
+-> done: LoginSteps.Thentheshoulddisplays("Wrong email") (0.1s)
+BaseTest Tear Down
+
+]]></output>
+            </test-case>
+            <test-case name="LoginUnsuccessfully_DataTable(&quot;No customer account found&quot;,&quot;Test@123.com&quot;,&quot;12345678&quot;,&quot;No customer account found&quot;,null)" fullname="SpecFlowJiraIntegration.Features.UI.LoginFeatureFeature.LoginUnsuccessfully_DataTable(&quot;No customer account found&quot;,&quot;Test@123.com&quot;,&quot;12345678&quot;,&quot;No customer account found&quot;,null)" methodname="LoginUnsuccessfully_DataTable(&quot;No customer account found&quot;,&quot;Test@123.com&quot;,&quot;12345678&quot;,&quot;No customer account found&quot;,null)" classname="LoginFeatureFeature" result="Passed" start-time="2023-07-01T 13:50:59Z" end-time="2023-07-01T 13:51:06Z" duration="7.413423" asserts="0" seed="266325289">
+              <properties>
+                <property name="Category" value="DataTable" />
+                <property name="Category" value="Regression" />
+                <property name="Category" value="Login" />
+              </properties>
+              <output><![CDATA[BaseTest Set up
+Given I open Homepage
+-> done: LoginSteps.GivenIopenHomepage() (2.7s)
+And I navigate to Login page
+Click on Login Link
+-> done: LoginSteps.GivenInavigatetoLoginpage() (1.4s)
+When I log in with account below
+  --- table step argument ---
+  | Email        | Password |
+  | Test@123.com | 12345678 |
+Test@123.com is entered in the Email Textbox field.
+12345678 is entered in the Password Textbox field.
+Click on Log in Button
+-> done: LoginSteps.WhenIloginwithaccountbelow(<table>) (1.2s)
+Then the "No customer account found" should display
+Error Message: No customer account found is displayed as expected
+-> done: LoginSteps.Thentheshoulddisplays("No customer accou...") (0.1s)
+BaseTest Tear Down
+
+]]></output>
+            </test-case>
+            <test-case name="LoginUnsuccessfully_DataTable(&quot;Wrong email format&quot;,&quot;Test123&quot;,&quot;121616&quot;,&quot;Wrong email&quot;,null)" fullname="SpecFlowJiraIntegration.Features.UI.LoginFeatureFeature.LoginUnsuccessfully_DataTable(&quot;Wrong email format&quot;,&quot;Test123&quot;,&quot;121616&quot;,&quot;Wrong email&quot;,null)" methodname="LoginUnsuccessfully_DataTable(&quot;Wrong email format&quot;,&quot;Test123&quot;,&quot;121616&quot;,&quot;Wrong email&quot;,null)" classname="LoginFeatureFeature" result="Passed" start-time="2023-07-01T 13:51:06Z" end-time="2023-07-01T 13:51:12Z" duration="6.400964" asserts="0" seed="665338479">
+              <properties>
+                <property name="Category" value="DataTable" />
+                <property name="Category" value="Regression" />
+                <property name="Category" value="Login" />
+              </properties>
+              <output><![CDATA[BaseTest Set up
+Given I open Homepage
+-> done: LoginSteps.GivenIopenHomepage() (3.2s)
+And I navigate to Login page
+Click on Login Link
+-> done: LoginSteps.GivenInavigatetoLoginpage() (0.7s)
+When I log in with account below
+  --- table step argument ---
+  | Email   | Password |
+  | Test123 | 121616   |
+Test123 is entered in the Email Textbox field.
+121616 is entered in the Password Textbox field.
+Click on Log in Button
+-> done: LoginSteps.WhenIloginwithaccountbelow(<table>) (0.7s)
+Then the "Wrong email" should display
+Error Message: Wrong email is displayed as expected
+-> done: LoginSteps.Thentheshoulddisplays("Wrong email") (0.1s)
+BaseTest Tear Down
+
+]]></output>
+            </test-case>
+            <test-case name="LoginUnsuccessfully_Dictionary(&quot;Wrong email format&quot;,&quot;Test&quot;,&quot;123456789&quot;,&quot;Wrong email&quot;,null)" fullname="SpecFlowJiraIntegration.Features.UI.LoginFeatureFeature.LoginUnsuccessfully_Dictionary(&quot;Wrong email format&quot;,&quot;Test&quot;,&quot;123456789&quot;,&quot;Wrong email&quot;,null)" methodname="LoginUnsuccessfully_Dictionary(&quot;Wrong email format&quot;,&quot;Test&quot;,&quot;123456789&quot;,&quot;Wrong email&quot;,null)" classname="LoginFeatureFeature" result="Passed" start-time="2023-07-01T 13:51:12Z" end-time="2023-07-01T 13:51:20Z" duration="7.579922" asserts="0" seed="406824521">
+              <properties>
+                <property name="Category" value="Dictionary" />
+                <property name="Category" value="Regression" />
+                <property name="Category" value="Login" />
+              </properties>
+              <output><![CDATA[BaseTest Set up
+Given I open Homepage
+-> done: LoginSteps.GivenIopenHomepage() (2.8s)
+And I navigate to Login page
+Click on Login Link
+-> done: LoginSteps.GivenInavigatetoLoginpage() (2.3s)
+When I log in with following account
+  --- table step argument ---
+  | Field    | Value     |
+  | Email    | Test      |
+  | Password | 123456789 |
+Test is entered in the Email Textbox field.
+123456789 is entered in the Password Textbox field.
+Click on Log in Button
+-> done: LoginSteps.WhenIloginwithfollowingaccount(<table>) (0.4s)
+Then the "Wrong email" should display
+Error Message: Wrong email is displayed as expected
+-> done: LoginSteps.Thentheshoulddisplays("Wrong email") (0.1s)
+BaseTest Tear Down
+
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+    <errors />
+  </test-suite>
+</test-run>

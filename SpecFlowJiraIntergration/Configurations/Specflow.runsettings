@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RunSettings>
+	<!-- Parameters used by tests at runtime -->
+	<TestRunParameters>
+		<Parameter name="Browser" value="Chrome" />
+		<Parameter name="Environment" value="Test" />
+		<Parameter name="HeadlessMode" value="false" />
+	</TestRunParameters>
+	<!-- Adapter Specific sections -->
+	<NUnit>
+		<NumberOfTestWorkers>1</NumberOfTestWorkers>
+		<TestOutputXml>C:\TestResults</TestOutputXml>
+	</NUnit>
+</RunSettings>
